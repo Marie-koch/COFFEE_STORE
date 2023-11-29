@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Encabezado del documento -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Bienvenidos a mi página web personal, donde comparto mis pensamientos y aventuras."
+    />
+    <!-- Descripción de la página web -->
+    <meta
+      name="keywords"
+      content="página web, personal, pensamientos, aventuras"
+    />
+    <!-- Palabras clave relacionadas con el contenido -->
+    <meta name="author" content="Mariela" />
+    <!-- Enlace al ícono de la pestaña del navegador -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- Familia de fuente (link google fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <title>Franquicias COFFEE STORE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Barra de navegación -->
+      <h1>COFFEE STORE</h1>
+      <a href="./index.html">Inicio</a>
+      <a href="./franquicias.html">Franquicias</a>
+      <a href="./contacto.html">Contacto</a>
+      <a href="./registro.html">Registro</a>
+      <a href="./quienes_somos.html">Quienes Somos</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="#">Whatsapp <i class="fab fa-whatsapp"></i></a>
+      <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+    </nav>
+    <!-- Header Introductorio -->
+    <div id="banner-dashboard" class="banner">
+      <h1>DASHBOARD</h1>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h2>Función 1</h2>
+        <p>Descripción de la Función 1</p>
+        <button id="funcion1">Acceder</button>
+      </div>
+      <div class="card">
+        <h2>Función 2</h2>
+        <p>Descripción de la Función 2</p>
+        <button id="funcion2">Acceder</button>
+      </div>
+      <div class="card">
+        <h2>Función 3</h2>
+        <p>Descripción de la Función 3</p>
+        <button id="funcion3">Acceder</button>
+      </div>
+      <div class="card">
+        <h2>Función 4</h2>
+        <p>Descripción de la Función 4</p>
+        <button id="funcion4">Acceder</button>
+      </div>
+      <div class="card">
+        <h2>Función 5</h2>
+        <p>Descripción de la Función 5</p>
+        <button id="funcion5">Acceder</button>
+      </div>
+      <div class="card">
+        <h2>Función 6</h2>
+        <p>Descripción de la Función 6</p>
+        <button id="funcion6">Acceder</button>
+      </div>
+    </div>
+
+    <!-- Pop-up para funciones -->
+    <div class="popup" id="popupFuncion1">
+      <div class="popup-content">
+        <!-- Contenido de la Función 1 -->
+        <h2>Función 1</h2>
+        <p>Este es el contenido adicional de la Función 1.</p>
+        <button id="cerrarFuncion1">Cerrar</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Franquicias COFFEE STORE</p>
+        <ul>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const botonFuncion1 = document.getElementById("funcion1");
+        const popupFuncion1 = document.getElementById("popupFuncion1");
+        const cerrarFuncion1 = document.getElementById("cerrarFuncion1");
+
+        // Abrir pop-up al hacer clic en el botón de la Función 1
+        botonFuncion1.addEventListener("click", function () {
+          popupFuncion1.classList.add("active");
+        });
+
+        // Cerrar pop-up al hacer clic en el botón "Cerrar" del pop-up de la Función 1
+        cerrarFuncion1.addEventListener("click", function () {
+          popupFuncion1.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

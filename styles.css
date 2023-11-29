@@ -1,0 +1,321 @@
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #efe9e1; /* Fondo café claro */
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  font-weight: 500;
+  font-style: italic;
+  background-color: #bb8d6b;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  height: 100px;
+}
+
+a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#banner-index {
+  background-image: url("./assets/banner.jpg");
+  height: 400px;
+}
+
+#banner-dashboard {
+  background-image: url("./assets/dashboard.jpg");
+}
+
+#banner-franquicias {
+  background-image: url("./assets/banner-franquicia.jpg");
+}
+
+#banner-contacto {
+  background-image: url("./assets/contacto.jpg");
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner h1 {
+  position: relative;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.banner p {
+  position: relative;
+  margin: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px; /* Espaciado exterior */
+}
+
+.card {
+  width: 20%; /* Ancho de cada tarjeta */
+  padding: 20px;
+  margin: 10px;
+  background-color: #e8d8c3; /* Color de fondo café claro */
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h1 {
+  margin-bottom: 10px;
+  color: #4d3319; /* Color del texto del encabezado café oscuro */
+}
+
+.card img {
+  width: 100%;
+  max-height: 400px; /* Tamaño máximo de altura para las imágenes */
+  object-fit: cover; /* Ajustar imagen al contenedor */
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #7a6332; /* Color del texto del párrafo café medio */
+}
+
+.card button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d3319; /* Color de fondo botón café oscuro */
+  color: #fff;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #6b4d25; /* Color de fondo botón café más oscuro al pasar el cursor */
+}
+
+/* Estilos para el pop-up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.popup.active {
+  display: flex;
+}
+
+footer {
+  background-color: #e8d8c3;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-content ul li {
+  margin-right: 20px;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #452d22;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3a251d;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: calc(100% - 10px);
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.form {
+  background-color: #f7f1eb; /* Fondo formulario café claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4d3319; /* Color de texto café oscuro */
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4d3319; /* Color de texto café oscuro */
+}
+
+.input-group input,
+.input-group textarea {
+  width: calc(100% - 10px);
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #c8bfb3; /* Color de borde café */
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4d3319; /* Color de fondo botón café oscuro */
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #6b4d25; /* Color de fondo botón café más oscuro al pasar el cursor */
+}
+
+main.content {
+  padding: 20px;
+}
+
+section.about {
+  margin-bottom: 30px;
+}
+
+section.about h1 {
+  color: #4d3319; /* Color del título */
+}
+
+section.team {
+  background-color: #e8d8c3; /* Color de fondo */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+section.team h2 {
+  color: #4d3319; /* Color del título */
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
